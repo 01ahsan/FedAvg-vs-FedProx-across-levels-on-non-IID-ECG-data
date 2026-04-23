@@ -1,0 +1,22 @@
+# Data
+data_root: "add your path"
+num_classes: 5
+
+# FL Setup
+num_clients: 10
+num_rounds: 50
+fraction_clients: 1.0     
+
+# Client training
+local_epochs: 3
+lr: 0.001
+batch_size: 32
+
+# FedProx
+mu: 0.01
+
+# Non-IID control
+alpha: 1.0     # Dirichlet alpha — 0.1=very non-IID, 1.0=mild
+
+# Reproducibility
+seed: 42
